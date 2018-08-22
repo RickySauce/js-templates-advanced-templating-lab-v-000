@@ -16,10 +16,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 function createRecipe(){
   let recipe = {
     name: document.getElementById("recipeName").value,
-    description: document.getElementById("recipeDesciption").value;
+    description: document.getElementById("recipeDesciption").value,
+    ingredients: [
+      document.getElementById("recipeIngredient1").value,
+      document.getElementById("recipeIngredient2").value,
+      document.getElementById("recipeIngredient3").value,
+      document.getElementById("recipeIngredient4").value,
+      document.getElementById("recipeIngredient5").value,
+    ]
   }
+
+
 }
 
 function displayEditForm(){
-  
+
 }
