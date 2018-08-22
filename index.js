@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 function createRecipe(){
-  let ingredientsArray = document.getElementByName("ingredients")
+  let ingredientsArray = document.getElementsByName("ingredients")
   let  newIngredients = []
   for (let i = 0; i < ingredientsArray.length; i++){
     if (ingredientsArray[i] !== ""){
@@ -29,7 +29,7 @@ function createRecipe(){
   }
    let template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
    let html = template(recipe)
-   document.getElementById('main').innerHTML = html 
+   document.getElementById('main').innerHTML = html
 }
 
 function displayEditForm(){
