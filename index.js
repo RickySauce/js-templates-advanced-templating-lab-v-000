@@ -17,7 +17,9 @@ function createRecipe(){
   let ingredientsArray = document.getElementByName("ingredients")
   let  newIngredients = []
   for (let i = 0; i < ingredientsArray.length; i++){
-    newIngredients.push(ingredientsArray[i].value)
+    if (ingredientsArray[i] !== ""){
+    newIngredients.push(ingredientsArray[i].value)  
+    }
   }
 
   let recipe = {
