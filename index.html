@@ -44,7 +44,16 @@
 
     </script>
     <script id="edit-form-partial" type="text/x-handlebars-template">
-
+      <form id='recipe-form' onsubmit="createRecipe();return false;">
+         Name: <input type="text" id="recipeName"><br>
+         Description: <input type="textarea" id="recipeDescription"><br>
+         Ingredient: <input type="text" id="recipeIngredient1"><br>
+         Ingredient: <input type="text" id="recipeIngredient2"><br>
+         Ingredient: <input type="text" id="recipeIngredient3"><br>
+         Ingredient: <input type="text" id="recipeIngredient4"><br>
+         Ingredient: <input type="text" id="recipeIngredient5"><br>
+         <input type="submit">
+     </form>
     </script>
   </body>
 </html>
