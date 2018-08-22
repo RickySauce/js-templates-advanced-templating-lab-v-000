@@ -26,7 +26,7 @@ function createRecipe(){
     ]
   }
    let template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
-   let html = template(recipe)
+   
 }
 
 function displayEditForm(){
