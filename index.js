@@ -14,7 +14,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 function createRecipe(){
-
+  let recipe = {
+    name: document.getElementById("recipeName").value,
+    description: document.getElementById("recipeDesciption").value;
+  }
 }
 
 function displayEditForm(){
