@@ -22,11 +22,11 @@ function createRecipe(){
       document.getElementById("recipeIngredient2").value,
       document.getElementById("recipeIngredient3").value,
       document.getElementById("recipeIngredient4").value,
-      document.getElementById("recipeIngredient5").value,
+      document.getElementById("recipeIngredient5").value
     ]
   }
    let template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
-   
+
 }
 
 function displayEditForm(){
