@@ -25,7 +25,7 @@ function createRecipe(){
       document.getElementById("recipeIngredient5").value,
     ]
   }
-
+   let template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
 
 }
 
