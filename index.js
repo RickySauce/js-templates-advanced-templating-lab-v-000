@@ -18,14 +18,14 @@ function createRecipe(){
   let  newIngredients = []
   for (let i = 0; i < ingredientsArray.length; i++){
     if (ingredientsArray[i] !== ""){
-    newIngredients.push(ingredientsArray[i].value)  
+    newIngredients.push(ingredientsArray[i].value)
     }
   }
 
   let recipe = {
     name: document.getElementById("name").value,
     description: document.getElementById("desciption").value,
-    ingredients:
+    ingredients: newIngredients
   }
    let template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
    let html = template(recipe)
