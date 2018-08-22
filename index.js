@@ -14,16 +14,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 function createRecipe(){
+  let ingredientsArray = document.getElementByName("ingredients")
+  let  newIngredients = []
+  
   let recipe = {
-    name: document.getElementById("recipeName").value,
-    description: document.getElementById("recipeDesciption").value,
-    ingredients: [
-      document.getElementById("recipeIngredient1").value,
-      document.getElementById("recipeIngredient2").value,
-      document.getElementById("recipeIngredient3").value,
-      document.getElementById("recipeIngredient4").value,
-      document.getElementById("recipeIngredient5").value
-    ]
+    name: document.getElementById("name").value,
+    description: document.getElementById("desciption").value,
+    ingredients: 
   }
    let template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
    let html = template(recipe)
